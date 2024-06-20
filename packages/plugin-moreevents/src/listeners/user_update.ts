@@ -6,12 +6,12 @@ new Listener({
 	run: (oldUser, newUser) => {
 		const client = oldUser.client;
 
-		if (oldUser.displayAvatarURL() !== newUser.displayAvatarURL()) {
+		if (oldUser.avatar !== newUser.avatar) {
 			client.emit(
 				'userAvatarUpdate',
 				newUser,
-				oldUser.displayAvatarURL(),
-				newUser.displayAvatarURL(),
+				oldUser.avatarURL(),
+				newUser.avatarURL()
 			);
 		}
 
@@ -20,7 +20,7 @@ new Listener({
 				'userUsernameUpdate',
 				newUser,
 				oldUser.username,
-				newUser.username,
+				newUser.username
 			);
 		}
 
@@ -29,7 +29,7 @@ new Listener({
 				'userDiscriminatorUpdate',
 				newUser,
 				oldUser.discriminator,
-				newUser.discriminator,
+				newUser.discriminator
 			);
 		}
 
@@ -40,5 +40,5 @@ new Listener({
 		if (oldUser.banner !== newUser.banner) {
 			client.emit('userBannerUpdate', newUser, oldUser.banner, newUser.banner);
 		}
-	},
+	}
 });

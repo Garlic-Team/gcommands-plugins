@@ -14,7 +14,7 @@ new Listener({
 				'threadNameUpdate',
 				newThread,
 				oldThread.name,
-				newThread.name,
+				newThread.name
 			);
 
 		if (oldThread.locked !== newThread.locked)
@@ -25,7 +25,7 @@ new Listener({
 				'threadRateLimitPerUserUpdate',
 				newThread,
 				oldThread.rateLimitPerUser,
-				newThread.rateLimitPerUser,
+				newThread.rateLimitPerUser
 			);
 
 		if (oldThread.autoArchiveDuration !== newThread.autoArchiveDuration)
@@ -33,7 +33,7 @@ new Listener({
 				'threadAutoArchiveDurationUpdate',
 				newThread,
 				oldThread.autoArchiveDuration,
-				newThread.autoArchiveDuration,
+				newThread.autoArchiveDuration
 			);
-	},
+	}
 });

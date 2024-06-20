@@ -40,12 +40,20 @@ Now when you create a listener, more events will show up.
 List of events:
 - selectMenu
 - clickButton
+- autocomplete
+- applicationCommand
+- messageContextMenuCommand
+- userContextMenuCommand
 
+- guildLargeUpdate
 - guildBoostLevelUp
 - guildBoostLevelDown
-- guildRegionUpdate
 - guildBannerUpdate
 - guildAfkChannelUpdate
+- guildModeratorNewsChannelUpdate
+- guildRulesChannelUpdate
+- guildSystemChannelUpdate
+- guildSystemEventsUpdate
 - guildVanityURLUpdate
 - guildFeaturesUpdate
 - guildAcronymUpdate
@@ -53,6 +61,28 @@ List of events:
 - guildMaximumMembersUpdate
 - guildPartnerUpdate
 - guildVerifyUpdate
+- guildNameUpdate
+- guildIconUpdate
+- guildDiscoverySplashUpdate
+- guildSplashUpdate
+- guildDescriptionUpdate
+- guildDefaultMessageNotificationsUpdate
+- guildExplicitContentFilterUpdate
+- guildMaximumMembersIncreased
+- guildMaximumMembersDecreased
+- guildMaxVideoChannelUsersIncreased
+- guildMaxVideoChannelUsersDecreased
+- guildMFAProtectionDisabled
+- guildMFAProtectionEnabled
+- guildNSFWLevelDecreased
+- guildNSFWLevelIncreased
+- guildVerificationLevelIncreased
+- guildVerificationLevelDecreased
+- guildLocaleUpdate
+- guildBoostProgressBarUpdate
+- guildShardUpdate
+- guildWidgetUpdate
+- guildWidgetChannelUpdate
 
 - threadStateUpdate
 - threadNameUpdate
@@ -69,11 +99,19 @@ List of events:
 - voiceChannelUndeaf
 - voiceStreamingStart
 - voiceStreamingStop
+- voiceCameraDisabled
+- voiceCameraEnabled
 
-- guildMemberNicknameUpdate
-- guildMemberAcceptShipScreening
 - guildMemberBoost
 - guildMemberUnboost
+- guildMemberNicknameUpdate
+- guildMemberTimeoutAdded
+- guildMemberTimeoutRemoved
+- guildMemberTimeoutUpdate
+- guildMemberAcceptShipScreening
+- guildMemberRoleUpdate
+- guildMemberGuildAvatarUpdate
+- guildMemebrFlagsUpdate
 
 - userAvatarUpdate
 - userUsernameUpdate
@@ -83,3 +121,10 @@ List of events:
 
 - rolePositionUpdate
 - rolePermissionsUpdate
+- roleColorUpdate
+- roleEditUpdate
+- roleHoistUpdate
+- roleIconUpdate
+- roleManageUpdate
+- roleMentionUpdate
+- roleNameUpdate
